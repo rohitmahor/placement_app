@@ -1,0 +1,268 @@
+<div class="container">
+  <form  ng-submit="postData()">
+
+    <fieldset class="form-group">
+      <legend><b>Profile Type*</b></legend>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" ng-model="jnf.profType" value="Analytics" ng-required="!jnf.profType"> Analytics
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" ng-model="jnf.profType" value="Consulting" ng-required="!jnf.profType"> Consulting
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" ng-model="jnf.profType" value="Core (Technical)" ng-required="!jnf.profType"> Core (Technical)
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" ng-model="jnf.profType" value="Finance" ng-required="!jnf.profType"> Finance
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" ng-model="jnf.profType" value="I.T." ng-required="!jnf.profType"> I.T.
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" ng-model="jnf.profType" value="Teaching & Research" ng-required="!jnf.profType"> Teaching & Research
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" ng-model="jnf.profType" value={{otherProfType}} ng-required="!jnf.profType"> Others
+          If others, please specify <input type="text" ng-model="otherProfType" ng-change="jnf.profType=otherProfType" value="Others">
+        </label>
+      </div>
+    </fieldset>
+
+    <div class="form-group">
+      <legend><b>Brief write-up on the Company (50 -75 words)*</b></legend>
+      <textarea  rows="10" class="form-control" ng-model="jnf.description"></textarea>
+    </div>
+
+    <div class="form-group">
+      <legend><b>Job Profile*</b></legend>
+      <div class="form-group">
+        <label>Job Designation*</label>
+        <input type="text" class="form-control" required ng-model="jnf.jobDesig">
+      </div>
+      <div class="form-group">
+        <label>Job Description*</label>
+        <input type="text" class="form-control" required ng-model="jnf.jobDesc">
+      </div>
+      <div class="form-group">
+        <label>Place of Posting*</label>
+        <input type="text" class="form-control" required ng-model="jnf.place">
+      </div>
+      <div class="form-group">
+        <label>Joining By*</label>
+        <input type="text" class="form-control" required ng-model="jnf.joinBy">
+      </div>
+    </div>
+
+    <div class="form-check">
+      <p style="margin-bottom: 5px">Company Location*</p>
+      <label class="form-check-label">
+      <input type="radio" class="form-check-input" ng-model="jnf.loc" value="International">International
+      </label>
+      <label class="form-check-label">
+      <input type="radio" class="form-check-input" ng-model="jnf.loc" value="Domestic">Domestic
+      </label>
+    </div>
+
+    <h4 style="margin-top: 15px">Salary Details*</h4>
+    <div style="padding: 10px;background: #f5f5f5;margin-bottom: 15px">
+      <h6 style="color: #f05b4f;">Please Note:</h6>
+      <ol>
+        <li>1. Performance based bonus should not be declared as part of Gross/CTC but to be indicated in Bonus/Perks/Incentive section.</li>
+        <li>2. Any amount to be disbursed later than the end of first 12 months should not be a part of Gross/CTC.</li>
+        <li>3. Joining Bonus/Signing Bonus to be indicated in Bonus/Perks/Incentive section.</li>
+        <li>4. Statutory Annual Payouts (e.g., Medical, LTC etc.) not to be a part of Gross.</li>
+      </ol>
+    </div>
+
+    <div class="form-group">
+      <div class="form-group">
+        <label>Cost to Company*</label>
+        <input type="text" class="form-control" required ng-model="jnf.cost">
+      </div>
+
+      <div class="form-group">
+        <label>Gross (Take-home, before tax and other deductions)*</label>
+        <input type="text" class="form-control" required ng-model="jnf.gross">
+      </div>
+
+      <div class="form-group">
+        <label>Bonus/Perks/Incentive (if any)</label>
+        <input type="text" class="form-control" ng-model="jnf.bonus">
+      </div>
+
+      <div class="form-check">
+        <p style="margin-bottom: 5px">Bond*</p>
+        <label class="form-check-label">
+          <input type="radio" ng-model="jnf.bond" value="yes"> yes
+        </label>
+        <label class="form-check-label">
+          <input type="radio" ng-model="jnf.bond" value="no"> No
+        </label>
+        (If yes, give details) <input type="text" ng-model="jnf.bondDetails">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <legend><b>Historical Selection Data (from system)</b></legend>
+      <div class="form-group">
+        <label>No. Committed (last year)*</label>
+        <input type="text" class="form-control" ng-model="jnf.committed">
+      </div>
+
+      <div class="form-group">
+        <label>No. Selected (last year)*</label>
+        <input type="text" class="form-control" ng-model="jnf.selected">
+      </div>
+    </div>
+
+
+
+    <div class="form-group">
+      <legend><b>Selection Process</b></legend>
+      <div class="form-check">
+        <p style="margin-bottom: 5px">Shortlist from Resumes*</p>
+        <label class="form-check-label">
+          <input type="radio"  ng-model="jnf.shortlist" value="yes" ng-required="!jnf.shortlist"> yes
+        </label>
+        <label class="form-check-label">
+          <input type="radio"  ng-model="jnf.shortlist" value="no" ng-required="!jnf.shortlist"> no
+        </label>
+      </div>
+
+      <div class="form-check">
+        <p style="margin-bottom: 5px">Written Test (Technical, Aptitude)*</p>
+        <label class="form-check-label">
+          <input type="radio" ng-model="jnf.technical" value="yes" ng-required="!jnf.technical"> yes
+        </label>
+        <label class="form-check-label">
+          <input type="radio" ng-model="jnf.technical" value="no" ng-required="!jnf.technical"> no
+        </label>
+      </div>
+
+      <div class="form-check">
+        <p style="margin-bottom: 5px">Group Discussion*</p>
+        <label class="form-check-label">
+          <input type="radio" ng-model="jnf.gd" value="yes" ng-required="!jnf.gd"> yes
+        </label>
+        <label class="form-check-label">
+          <input type="radio" ng-model="jnf.gd" value="no" ng-required="!jnf.gd"> no
+        </label>
+      </div>
+
+      <div class="form-check">
+        <p style="margin-bottom: 5px">Personal Interview*</p>
+        <label class="form-check-label">
+          <input type="radio" ng-model="jnf.pi" value="yes" ng-required="!jnf.pi"> yes
+        </label>
+        <label class="form-check-label">
+          <input type="radio" ng-model="jnf.pi" value="no" ng-required="!jnf.pi"> no
+        </label>
+      </div>
+
+      <div class="form-check">
+        <p style="margin-bottom: 5px">Medical Test*</p>
+        <label class="form-check-label">
+          <input type="radio" ng-model="jnf.medical" value="yes" ng-required="!jnf.medical"> yes
+        </label>
+        <label class="form-check-label">
+          <input type="radio" ng-model="jnf.medical" value="no" ng-required="!jnf.medical"> no
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label>Number of Rounds*</label>
+        <input type="number" class="form-control" required ng-model="jnf.rounds">
+      </div>
+
+      <div class="form-group">
+        <label>Minimum Number of offers you intend to make*</label>
+        <input type="number" class="form-control" required ng-model="jnf.minOffers">
+      </div>
+
+      <div class="form-group">
+        <label>Eligible Departments and Programs*</label>
+        <input type="text" class="form-control" required ng-model="jnf.eligibleDep">
+      </div>
+
+      <div style="background: #f5f5f5;padding: 10px;">
+        <p>(List of Programs are given in the annexure and are available at website)</p>
+        Either mention general category such as: All Students / All B. Tech & Dual Degree Students / All Dual Degree/ All M. Tech Students / All students majoring in Computer Science or Electronics  etc.
+        Or if you are targeting specific Programmes, please mention their names.
+      </div>
+
+    </div>
+
+    <div class="form-group">
+      <legend><b>Logistics Requirements*</b></legend>
+      <div class="form-group">
+        <label>Number of Members*</label>
+        <input type="text" class="form-control" required ng-model="jnf.members">
+      </div>
+
+      <div class="form-group">
+        <label>Number of Rooms required for selection process*</label>
+        <input type="text" class="form-control" required ng-model="jnf.rooms">
+      </div>
+
+      <div class="form-group">
+        <label>Other Requirements</label>
+        <input type="text" class="form-control" ng-model="jnf.otherReq">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <legend><b>Contact Person*</b></legend>
+      <div class="form-group">
+        <label>Name*</label>
+        <input type="text" class="form-control" required ng-model="jnf.contactName">
+      </div>
+
+      <div class="form-group">
+        <label>Designation*</label>
+        <input type="text" class="form-control" required ng-model="jnf.contactDesig">
+      </div>
+
+      <div class="form-group">
+        <label>Email Address*</label>
+        <input type="text"  class="form-control" required ng-model="jnf.contactEmail">
+      </div>
+
+      <div class="form-group">
+        <label>Postal Address*</label>
+        <input type="text" class="form-control" required ng-model="jnf.contactAddress">
+      </div>
+
+      <div class="form-group">
+        <label>Contact Number (Mobile)*</label>
+        <input type="text" class="form-control"  required ng-model="jnf.contactMobile">
+      </div>
+
+      <div class="form-group">
+        <label> Contact Number (Other)*</label>
+       <input type="text" class="form-control" ng-model="jnf.contactOther">
+      </div>
+
+      <div>
+        <label>Fax Number*</label>
+        <input type="text" class="form-control" ng-model="jnf.contactFax">
+      </div>
+    </div>
+
+    <div>
+      <button type="submit" class="btn btn-success btn-md" style="margin-bottom: 20px">Submit</button>
+    </div>
+  </form>
+</div>

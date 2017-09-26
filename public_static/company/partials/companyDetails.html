@@ -1,0 +1,59 @@
+<div class="container">
+  <form  ng-submit="postData()">
+    <div class="form-group">
+      <legend>Company Name* </legend>
+      <input type="text" class="form-control" required ng-model="companyDetails.name">
+    </div>
+
+    <div class="form-group">
+      <legend>Website / other source of information*</legend>
+      <input type="text" class="form-control" ng-model="companyDetails.site">
+    </div>
+
+    <fieldset class="form-group">
+      <legend>*Company Type:</legend>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio"  class="form-check-input" ng-model="companyDetails.compType" value="Private Sector" ng-required="!companyDetails.compType">
+          Private Sector
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio"  class="form-check-input" ng-model="companyDetails.compType" value="Start-up" ng-required="!companyDetails.compType">
+          Start-up
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio"  class="form-check-input" ng-model="companyDetails.compType" value="Government" ng-required="!companyDetails.compType">Government
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio"  class="form-check-input" ng-model="companyDetails.compType" value="Public Sector" ng-required="!companyDetails.compType">Public Sector
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio"  class="form-check-input" ng-model="companyDetails.compType" value="MNC (Indian Origin)" ng-required="!companyDetails.compType">MNC (Indian Origin)
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" ng-model="companyDetails.compType" value="MNC (Foreign Origin)" ng-required="!companyDetails.compType">MNC (Foreign Origin)
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" ng-model="companyDetails.compType" value={{otherCompType}} ng-required="!companyDetails.compType">Others
+          If others, please specify<input type="text" ng-model="otherCompType" ng-change="companyDetails.compType=otherCompType" value="Others">
+        </label>
+      </div>
+    </fieldset>
+
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>

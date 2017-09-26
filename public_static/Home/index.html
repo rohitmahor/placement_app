@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>T&P MAIT</title>
+    <link rel="icon" href="images/mait-logo.png">
+    <link rel="stylesheet" href="owl.carousel.css">
+    <link rel="stylesheet" href="owl.theme.default.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="padding: 0;margin: 0;">
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="mait-logo-1 navbar-brand" href="#"><img src="images/mait-logo.png" alt="Mait logo" width="70px"></a>
+    <a class="mait-logo-2 navbar-brand" href="#"><img src="images/mait-home-logo.png" alt="Mait logo" width="250px"></a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <a class="nav-link" href="#why-mait" ><li class="nav-item ">Why MAIT <span class="sr-only">(current)</span></li></a>
+
+            <a class="nav-link" href="#procedure"><li class="nav-item ">Procedure <span class="sr-only">(current)</span></li></a>
+
+            <a class="nav-link" href="#"><li class="nav-item ">Alumni <span class="sr-only">(current)</span></li></a>
+
+            <div class="dropdown ">
+            <li class="nav-item download-li">
+            <span class="nav-link">
+                <span class="download dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Downloads
+                </span>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Placement Brochure</a>
+                    <a class="dropdown-item" href="#">Job Notification Form (JNF)</a>
+                    <a class="dropdown-item" href="#">Training Notification Form (TNF)</a>
+                </div>
+            </span>
+            </li>
+            </div>
+
+            <a class="nav-link" href="#about"> <li class="nav-item">About Us</li></a>
+
+            <a class="nav-link " href="#contact"><li class="nav-item">Contact Us </li></a>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <button type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#login-modal">Log in</button>
+            <button type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#signup">Sign up</button>
+        </form>
+
+
+    </div>
+</nav>
+
+<div class="background-img"></div>
+<div class="col-lg-6 col-md-6 col-sm-8 col-xs-8 owl-carousel owl-theme">
+    <div class="item">
+        <img src="https://h41382.www4.hpe.com/toolkit/1.5.1/img/icons/apple-touch-icon-114x114.png" alt="" >
+    </div>
+    <div class="item">
+        <img src="http://static.dnaindia.com/sites/default/files/2015/12/07/402382-infosys-twitter.png" alt="">
+    </div>
+    <div class="item">
+        <img src="http://news.efinancialcareers.com/wp-content/uploads/accenture2.png" alt="">
+    </div>
+    <!--<div class="item">-->
+        <!--<img src="http://analyticsindiajobs.com/wp-content/uploads/company_logos/2014/02/zs-share-logo-wide2.jpg" alt="">-->
+    <!--</div>-->
+    <div class="item">
+        <img src="http://rmtworek.com/wp-content/uploads/2014/03/amazon-logo.jpg" alt="">
+    </div>
+    <div class="item">
+        <img src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/32203-82d0714db762a3e51bfe40bf38acfe52-medium_jpg.jpg?buster=1436824309" alt="">
+    </div>
+    <div class="item">
+        <img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAMAAADxPgR5AAAAk1BMVEX///8jeczi6/aBrd4dcscTcMgIbMP1+PuIst4ygcvs8/nU4vKhwebJ2vDl7/ghdshwoNi71Ow2hMoMcMJHh9Avf9CsyedXkdFdmNQ7gs+Js97z9/wAbcoSc83c6PTM3vEAa8Zemt1Di895q96UuuAWeM9DicxVlNg7iNhVk9G0y+hGhMxloNwSccAle8t3pt8thNqBJ0suAAAEPElEQVRoge2Xa5eqNhSGw80oN9ERRK6OSFEO1fn/v66BZDNJiHNO12qnXW2eL+Ps9022iTs7gJBGo9FoNBqNRqPRaDSE2lorqBDulcI6yxITw+DctzJBtK7C5LkvDbYS5BerJXaA8FMlTGyjXU4nDI+S6Xw2hdXEjqgXKUloOzJ2OyYsF3GgaKOaJkxLaXSRcflwJsl2MaDAUjBuaaISQG8y2FKJxucT+o0sJ39hNfwqWMWruORRmHL89dSkShU7RrdUWaUM4vLxuKVrS4pfQ8iXE0lWSZWetzL21iBF05T21xgeCodyK4fjGhIGxVZWywglpbEknhIqBJ42IlXabhfhJ2yqShyQ56sgp2mnFHh6lPeqMEuIE4W4+/uL8l+CN6QMTxSSjsUbl0XChkXuA2twyL+nPMNkrSIh+J5gft6dAa2pRgJX2vls5wDVXh1YzytPYGqE9mgXUzvxV0JXa9diwhjqNpAS0sPxZl8+E7bMmoLJEk7QWxmRpbudGGwzIWGYAKGQjxQxi0PtkcoE67z7tZ8I9PlYoxLS1n032AVeCgs+tyhfaGRLZXJhXu8ZMaQq7YfoBevP7+bLpqdnLsaJVRrEbxN2KVdp+aZk1XI3m1Ww0VubfnB6fw6xAVLRBLeY0soJ21jJg+9R1gcNGveUyZcN/fsRpVR7fIgJ3R0g/YhVv1MifC8PTJ7HPvQs0lc1jKjQ/4v6sp/YbKTf0N/sVWw6vsqzmIWbfGcItgTd2QSbq1SlztSBnEJubYX6unfeuQdQi5lWg+u2Dme61WjPOlwpVemJPV4sqrRcPIFQjOazvKyWPZtELmpazvN00YX9b0hVGgBiQ0Bm8Ir601lBjHSNkPeQXajh8z9cpdgEsCjkFYvPtwgOwTov0TU5Uz5PVY2GECYQD3idHimXxY3PhAgGmE8W6eY3pSuY1iRF/X6EucYCjJjW+cJS6gftgra9uPFZTzxCwqpjDdP+DUyWwxrm+K3Mjswy6caY4lIqe2l9OFEMOWHMhON847+zyO0A32HNTPFzjPi3Df1vPWrdB3OL5zD3GLVUpWENCvhxBZF5900wVfxc9fR9PNCkR4lvB/9Zw1cD8FeGYKW6XhPybqESeM4DeT9yfueHpfSJ1Bj/edBq2AvTrPYkoaJTTgl/9vZU+iRhKzRYdnaGcuqr0+eD6CAJH6fNgkePsBUv4zxxZ5KXeMH0eNIkPZnyxN6976LjzvUYnvFJ1gyV0sw4uSuGWCVirmWFSsd3Mp9AgbFjKAXpDEomuBFwVUORVrKjPh2WnMbfUCVM/DjcDvQXwtlNGAZ3pDk8oAvdBcfhPlbpi2PhLONTi3SK8xDQBWCrFYbNHd7qYAf3wvTkWLxc4fr0Q72+YzbfpWSFvGleIdrNj61HcYUpud5UkCrNlQKBbyGSSX4zIbg/dWg0Go1Go9FoNBqNRvNf5A8Rj6JosgOqLQAAAABJRU5ErkJggg==" alt="">
+    </div>
+    <div class="item">
+        <img src="http://www.dishadhruvacademy.com/wp-content/uploads/2017/06/indian-army-1-1.jpg" alt="">
+    </div>
+</div>
+
+ <!--Why MAIT-->
+
+<div id="why-mait" class="why-mait">
+    <h2><span>Why MAIT ?</span></h2>
+    <div  class="why-mait-content row" style="margin: 45px 0 0 0;padding: 20px 0 20px 0">
+    <div class="quote d-flex align-items-center col-1" style="padding:0;text-align:right;font-size: 30px;color: grey;">
+        <i class="fa fa-quote-left" aria-hidden="true" style="margin-left: 40%;"></i>
+    </div>
+            <div class="col-10">
+                Maharaja Agrasen Institute of Technology is established by Maharaja Agrasen Technical Education Society promoted by a group of well known Industrialists, Businessman, Professionals and Philanthropists with an aim to promote quality education in the field of Technology.
+                MAIT endeavors to provide industry relevant education and training to its well-crafted practical training programs for the student in different semesters of the course.
+
+            </div>
+        <div class="quote d-flex align-items-center col-1" style="padding:0;text-align:left;font-size: 30px;color: grey;">
+            <i class="fa fa-quote-right" aria-hidden="true" style="margin-right: 40%;" ></i>
+        </div>
+    </div>
+</div>
+
+<!--procedure-->
+
+<div id="procedure" class="procedure why-mait">
+    <h2><span>Procedure</span></h2>
+    <div  class="procedure-content" style="margin: 45px 0 0 0;padding: 20px 0 20px 0">
+        <div class="steps col-10">
+            <h3>Step 1.</h3>
+            <p>
+                Placement office sends invitations to companies and organizations along with relevant information.
+                You can also send us a mail at <a href=""><u>mait@mait.ac.in</u> </a> regarding the same.
+            </p>
+        </div>
+
+        <div class="steps col-10">
+            <h3>Step 2.</h3>
+            <p>
+                Companies and organizations interested to recruit, register to the <a href="">T&P MAIT</a> website.
+            </p>
+        </div>
+
+        <div class="steps col-10">
+            <h3>Step 3.</h3>
+            <p>
+                Companies may fill Job Notification Form (JNF) for each profile they wish to hire for.
+                Once the filled JNF  with all the required details is received, companies are registered and given login credentials
+                to access their online account on the T&P website.
+            </p>
+        </div>
+
+        <div class="steps col-10">
+            <h3>Step 4.</h3>
+            <p>
+                The JNF is frozen on the T&P website by the company till a
+                deadline, after which the student shall be able to view all the details, and the
+                eligible students may apply.
+            </p>
+            <p>
+                The company will then shortlist the students either based on their CVs or they
+                can conduct a Test/GD for shortlisting the students.
+            </p>
+        </div>
+
+        <div class="steps col-10">
+            <h3>Step 5.</h3>
+            <p>
+                Shortlisted students are notified.
+            </p>
+            <p>
+                The placement office allots the dates for campus interviews, by considering factors
+                like student
+                preference. job profile, compensation, history with the campus, etc.
+            </p>
+        </div>
+
+        <div class="steps col-10">
+            <h3>Step 6.</h3>
+            <p>
+                After completion of selection process, company is required to
+                announce the final list of the students on the same day itself.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- About us -->
+<div id="about" class="why-mait" style="margin-bottom: 40px">
+    <h2><span>About us</span></h2>
+    <div  class="why-mait-content row" style="margin: 45px 0 0 0;padding: 20px 0 20px 0">
+        <div class="quote d-flex align-items-center col-1" style="padding:0;text-align:right;font-size: 30px;color: grey;">
+            <i class="fa fa-quote-left" aria-hidden="true" style="margin-left: 40%;"></i>
+        </div>
+        <div class="col-10">
+           <p>Maharaja Agrasen Institute of Technology was established in 1999 by Maharaja Agrasen Technical Education Society promoted by a group of well known Industrialists, Businessman, Professionals and Philanthropists with an aim to promote quality education in the field of Technology and Management. Since then, MAIT has grown from strength to strength to emerge as one of the top technical institutes among the private Institutes and has been constantly ranked amongst the top engineering Institutes by DATAQUEST.</p>
+            <p>The institute began its first batch of 180 B.Tech. students in 1999 and at present, MAIT offers Bachelor's Degree in 5 disciplines of Engineering - Computer Science and Engineering (240 students intake), Electronics and Communication Engineering, Electrical and Electronics Engineering, Information Technology and Mechanical and Automation Engineering (180 students intake each), and Postgraduate degree in Master of Business Administration (180 students intake). The Institute is approved by All India Council for Technical Education and affiliated to Guru Gobind Singh Indraprastha University, Delhi.</p>
+        </div>
+        <div class="quote d-flex align-items-center col-1" style="padding:0;text-align:left;font-size: 30px;color: grey;">
+            <i class="fa fa-quote-right" aria-hidden="true" style="margin-right: 40%;" ></i>
+        </div>
+    </div>
+</div>
+
+
+<!--contact us-->
+<div id="contact" class="contact why-mait">
+    <h2><span>Contact us</span></h2>
+    <div class="contact-content">
+        <!--<div class="row">-->
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="float: left;margin: 30px 0 0 0">
+                <form id="contactDetails">
+                    <div class="floating-placeholder form-group">
+                        <input id="companyName" required name="companyName" type="text"/>
+                        <label for="companyName">Company's Full name</label>
+                    </div>
+                    <div class="floating-placeholder form-group">
+                        <input id="companyAdd" required name="companyAdd" type="text"/>
+                        <label for="companyAdd">Company's Address</label>
+                    </div>
+                    <div class="floating-placeholder form-group">
+                        <input id="companyEmail" required name="companyEmail" type="email"/>
+                        <label for="companyEmail">Company's Email</label>
+                    </div>
+                    <div class="floating-placeholder form-group">
+                        <input id="companyPhone" required name="companyPhone" type="number"/>
+                        <label for="companyPhone">Contact number</label>
+                    </div>
+
+                <button class="contactSubmit btn btn-primary col-12" type="submit" style="margin: 0 0 30px 0;">Submit</button>
+                </form>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="map"></div>
+        <!--</div>-->
+    </div>
+</div>
+
+<footer>
+    <p style="text-align: center;color: white;padding-top: 45px">&copy; Maharaja Agrasen Institue of Technology</p>
+</footer>
+
+<!--login  Modal -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">Log In</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row" style="padding: 0;margin: 0">
+                            <button id="studentBtn" class="studentBtn btn btn-success col-6">Student</button>
+                            <button id="recruiterBtn" class="btn-style studentBtn btn btn-success col-6">Recruiter</button>
+                        </div>
+
+                    <div id="student-login">
+
+                    <form action="/login" method="post">
+                    <div class="floating-placeholder">
+                        <input id="name" required name="username" type="number"/>
+                        <label for="name">Roll no.</label>
+                    </div>
+                    <div class="floating-placeholder">
+                        <input id="password" required name="password" type="password" />
+                        <label for="password">Password</label>
+                    </div>
+                        <a href="/forgot" style="color: red;float: right;margin-bottom: 10px">forgot password?</a>
+                    <button class="submit btn btn-primary col-12" type="submit" style="margin: 0;">Log In</button>
+                    </form>
+                    </div>
+
+                    <div id="recruiter-login">
+                    <form action="/company-login" method="post">
+                    <div class="floating-placeholder">
+                        <input id="rec-name" required name="username" type="text"/>
+                        <label for="rec-name">User Id</label>
+                    </div>
+                    <div class="floating-placeholder">
+                        <input id="rec-password" required name="password" type="password"/>
+                        <label for="rec-password">Password</label>
+                    </div>
+                        <a href="/forgot" style="color: red;float: right;margin-bottom: 10px">forgot password?</a>
+                        <button class="submit btn btn-primary col-12" type="submit" style="margin: 0;">Log In</button>
+                    </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<!--signup Modal-->
+<div class="modal fade" id="signup" tabindex="-1" style="margin-top: 50px;" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Sign up for students only</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body signup-modal-body">
+                <form id="signup-form">
+                    <div class="floating-placeholder">
+                        <input id="signup-name" required name="name" type="number"/>
+                        <label for="signup-name">Roll no.*</label>
+                    </div>
+
+                    <div class="floating-placeholder">
+                        <input id="signup-email" required name="name" type="email" data-dismiss="modal" aria-label="Close"/>
+                        <label for="signup-email">Email Address*</label>
+                    </div>
+
+                    <!--<div class="floating-placeholder">-->
+                        <!--<input id="phone" required name="name" type="number"/>-->
+                        <!--<label for="phone">Phone number*</label>-->
+                    <!--</div>-->
+
+                    <div class="floating-placeholder">
+                        <input id="signup-password" required name="password" type="password"  data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="Password must contain 6-20 characters." />
+                        <label for="signup-password" >Password*</label>
+                    </div>
+
+                    <div class="floating-placeholder">
+                        <input id="re-password" required name="password" type="password" />
+                        <label for="re-password">Confirm Password*</label>
+                    </div>
+
+                    <button class="submit btn btn-primary col-12" type="submit" style="margin: 20px 0 0 0;">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="owl.carousel.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            autoplay:true,
+            loop:true,
+            margin:0,
+            nav:false,
+            dots:false,
+            responsive:{
+                0:{
+                    items:3
+                },
+                600:{
+                    items:4
+                },
+                1000:{
+                    items:6
+                }
+            }
+        });
+
+            function updateText(event){
+                var input=$(this);
+                setTimeout(function(){
+                    var val=input.val();
+                    if(val!="")
+                        input.parent().addClass("floating-placeholder-float");
+                    else
+                        input.parent().removeClass("floating-placeholder-float");
+                },1)
+            }
+            $(".floating-placeholder input").keydown(updateText);
+            $(".floating-placeholder input").change(updateText);
+
+        $('#recruiterBtn').click(function(){
+            $(this).removeClass('btn-style');
+
+            $('#student-login').css({
+                'display':'none'
+            });
+
+            $('#studentBtn').addClass('btn-style');
+
+            $('#recruiter-login').fadeIn('slow')
+        });
+
+        $('#studentBtn').click(function(){
+            $(this).removeClass('btn-style');
+
+            $('#recruiter-login').css({
+                'display':'none'
+            });
+
+            $('#recruiterBtn').addClass('btn-style');
+
+            $('#student-login').fadeIn('slow')
+        });
+
+        $(document).on('click', '.navbar-nav > a', function(event){
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $( $(this).attr('href') ).offset().top - 150
+            }, 500);
+        });
+
+        (function (){
+            if($(window).width()<=990) {
+                $('.navbar-nav > a').attr({'data-toggle':'collapse',
+                    'data-target':'#navbarSupportedContent'});
+            }
+        })();
+
+        $(window).on("resize", checkPosition);
+        function checkPosition() {
+            if (window.matchMedia('(max-width: 990px)').matches) {
+                $('.navbar-nav > a').attr({'data-toggle':'collapse',
+                    'data-target':'#navbarSupportedContent'});
+            }
+            else {
+                $('.navbar-nav > a').removeAttr('data-target','data-toggle');
+            }
+        }
+
+        $('[data-toggle="popover"]').popover();
+
+        $('#signup').submit(function(e){
+            e.preventDefault();
+            $.post('/signup',{roll:$('#signup-name').val(),email:$('#signup-email').val(),
+            password:$('#signup-password').val(),repassword:$('#re-password').val()},function(response){
+                var body = $('.signup-modal-body');
+                if(response && typeof response === "object") {
+                    console.log(response);
+                    response.forEach(function(x,i){
+                        body.prepend('<div class="alert alert-danger" role="alert">'+ x.msg +
+                            '</div>')
+                    })
+                }
+                else if(!response) {
+                    console.log('inside else');
+                    alert('Check your registered email inbox and verify your email');
+                }
+            });
+        });
+
+        $('#contactDetails').submit(function (e){
+            e.preventDefault();
+            $.post('/contactDetails',{"cmpName":$('#companyName').val(),"cmpAdd":$('#companyAdd').val(),"cmpEmail":$('#companyEmail').val(),"cmpPhone":$('#companyPhone').val()},function(res){
+                res.forEach(function(x){
+                    alert(x.msg);
+                    $('#companyName').val('');$('#companyAdd').val('');$('#companyEmail').val('');$('#companyPhone').val('');
+                });
+            });
+        });
+    });
+</script>
+
+<script>
+    function initMap() {
+        var uluru = {lat: 28.7196, lng: 77.0661};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 18,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr21rUZ0PcEAfloZK6tD3CbSnMDz9ROp4&callback=initMap">
+
+</script>
+</body>
+</html>

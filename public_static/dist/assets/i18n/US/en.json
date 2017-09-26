@@ -1,0 +1,46 @@
+{
+  "login": {
+    "title": "Sign in to ng2-admin",
+    "signup_link": "New to ng2-admin? Sign up!",
+    "email": "Email",
+    "password": "Password",
+    "sign_in": "Sign in",
+    "forgot_password": "Forgot password?",
+    "sign_from_app_text": "or Sign in with one click",
+    "share_on_facebook": "Share on Facebook",
+    "share_on_twitter": "Share on Twitter",
+    "share_on_google_plus": "Share on Google Plus"
+  },
+  "general": {
+    "akveo": "Akveo",
+    "home": "Home",
+    "forms": {
+      "option1": "Option 1"
+    },
+    "menu": {
+      "applied": "Applied",
+      "companies": "Companies",
+      "tables": "Tables",
+      "maps": "Maps",
+      "pages": "Pages",
+      "login": "Login",
+      "register": "Register",
+      "external_link": "External Link"
+    },
+    "created_with": "Created with"
+  },
+  "chart": {
+    "lines": "Lines",
+    "bars": "Bars",
+    "simple_line_chart": "Simple line chart",
+    "line_chart": "Line chart with area",
+    "bi_polar_line_chart": "Bi-polar line chart with area only",
+    "simple_bar_chart": "Simple bar chart",
+    "multi_line_labels_bar_chart": "Multi-line labels bar chart",
+    "stacked_bar_chart": "Stacked bar chart",
+    "pies_and_donuts": "Pies & Donuts",
+    "simple_pie": "Simple Pie",
+    "pie_with_labels": "Pie with labels",
+    "donut": "Donut"
+  }
+}

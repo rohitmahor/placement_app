@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>T&P MAIT</title>
+    <link rel="icon" href="images/mait-logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular.js"></script>
+<script src="//npmcdn.com/@angular/router@0.2.0/angular1/angular_1_router.js"></script>
+<script src="./app.js"></script>
+<body  ng-app="myApp">
+    <header class="header">
+        <img src="images/mait-home-logo.png" alt="" width="300px" style="margin-left: -5px">
+        <span class="profile" ng-controller="signoutCtrl">
+          <span id="signout" style="margin-top : 5px">
+            <button type="button" class="btn btn-primary" ng-click="signoutClicked()">Signout</button>
+          </span>
+        </span>
+        <br>
+
+        <div class="icon" onclick="openBar()">
+           <div class="bars"></div>
+        </div>
+    </header>
+    <app></app>
+   <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>

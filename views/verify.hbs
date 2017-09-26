@@ -1,0 +1,19 @@
+
+<h1 style="text-align: center">
+    <img id="logo" src="../images/mait-logo.png" alt="" width="200px">
+</h1>
+<h4 style="text-align: center">
+    Now you can <a href="/">login</a>
+</h4>
+<div class="form col-xs-10 col-sm-10 col-md-6 col-lg-6">
+    {{#if error}}
+        <div class="alert alert-danger" role="alert">
+            {{error}}
+        </div>
+    {{/if}}
+    <!--<form class="verify-form" action="/verify" method="post">-->
+    <!--<input type="text" id="secret-code" name="code" class="form-control" placeholder="Secret code" required>-->
+    <!--<input type="submit" value="Verify" class="btn btn-outline-primary">-->
+    <!--</form>-->
+</div>
+

@@ -1,0 +1,24 @@
+<style>
+    .btn {
+        display: block;
+        margin: 10px auto;
+
+    }
+</style>
+<h1 style="text-align: center">
+    <img id="logo" src="../images/mait-logo.png" alt="" width="200px">
+</h1>
+<h4 style="text-align: center">
+    Enter your registered Email address
+</h4>
+<div class="form col-xs-10 col-sm-10 col-md-6 col-lg-6">
+    {{#if error}}
+        <div class="alert alert-danger" role="alert">
+            {{error}}
+        </div>
+    {{/if}}
+    <form class="verify-form" action="/forgot" method="post">
+    <input type="email" id="secret-code" name="email" class="form-control" placeholder="Email address" required>
+    <input type="submit" value="Submit" class="btn btn-outline-primary">
+    </form>
+</div>

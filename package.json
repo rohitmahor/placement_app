@@ -1,0 +1,41 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://rohitmahor@bitbucket.org/coolsaiification/frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/coolsaiification/frontend#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.17.2",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^1.3.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "*",
+    "email-verification": "^0.4.6",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.5",
+    "express-validator": "^3.2.1",
+    "googlemaps": "^1.12.0",
+    "handlebars": "^4.0.10",
+    "mongo-sanitize": "^1.0.0",
+    "mongodb": "^2.2.30",
+    "nodemailer": "^4.0.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "pdf2json": "^1.1.7",
+    "pdfreader": "^0.2.4",
+    "randomstring": "^1.1.5",
+    "request": "^2.81.0"
+  }
+}
