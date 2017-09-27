@@ -2,9 +2,9 @@
 This app is for campus placement. In this student can apply for jobs and company can see their details.
 This app has two dashboards one for students and other for college.
 
-Student dashboard: ![alt text](E:\snapshots\student-dashboard.png)
+Student dashboard: ![alt text](https://github.com/rohitmahor/placement_app/blob/master/screenshots/student-dashboard.png)
 
-Company dashboard: ![alt text](E:\snapshots\cmpdash1.png)
+Company dashboard: ![alt text](https://github.com/rohitmahor/placement_app/blob/master/screenshots/cmpdash1.png)
 
 ## Technologies used
   * HTML5, CSS3, Javascript, JQuery
