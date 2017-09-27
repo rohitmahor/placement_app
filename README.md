@@ -26,3 +26,5 @@ Company dashboard: ![alt text](E:\snapshots\cmpdash1.png)
   ```Commands
   node server.js
   ```
+#### NOTES: 
+This app may not be setup in windows operating system. 
